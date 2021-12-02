@@ -34,7 +34,7 @@ Quand on créé un nouveau projet (peu importe le type de projet ou le langage u
 
 Pour créer un nouveau repository il suffit de se rendre sur son profil github dans l'onglet repository et de cliquer sur *new*. Puis le menu de création nous demande de nommer le repository et propose quelques options à cocher ou non. En général la seule option qui nous intéresse est de mettre le repo en public ou en privé. Dans notre exemple je vais créer un repo nommé 'git_memo' que je vais laisser en public.
 
-<div>
+<div align="center">
 <details>
 <summary>Créer un nouveau repository</summary>
 <br>
