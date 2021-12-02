@@ -34,6 +34,7 @@ Quand on créé un nouveau projet (peu importe le type de projet ou le langage u
 
 Pour créer un nouveau repository il suffit de se rendre sur son profil github dans l'onglet repository et de cliquer sur *new*. Puis le menu de création nous demande de nommer le repository et propose quelques options à cocher ou non. En général la seule option qui nous intéresse est de mettre le repo en public ou en privé. Dans notre exemple je vais créer un repo nommé 'git_memo' que je vais laisser en public.
 
+<div>
 <details>
 <summary>Créer un nouveau repository</summary>
 <br>
@@ -42,7 +43,9 @@ Pour créer un nouveau repository il suffit de se rendre sur son profil github d
 <img align="right" width="50%" alt="newRepo" src="./assets/detailsRepo.png" />
 </div>
 </details>
-<br>
+</div>
+
+<br><br>
 Admettons maintenant que nous avons déjà un projet en cours sur notre machine en local et que nous avons créé ce repo pour ce projet. Nous allons effectuer l'initialisation de ce repo en lien avec notre projet et effectuer notre première sauvegarde.
 
 Pour cela, nous allons ouvrir notre invite de commande (ou powershell). Il faut bien vérifier que nous avons *git cli* d'installé sur notre machine pour qu'elle reconnaisse les commandes git.
@@ -111,8 +114,8 @@ Avant de nous attaquer aux branches et au travail en équipe, il est important d
 Il est bon de noter que beaucoup de frameworks ou CLI qui permettent de set-up des projets ajoutent souvent de base ce fichier à la racine du projet. Si il n'existe pas il faut penser à le créer. À l'intérieur on va renseigner les différents dossiers et fichiers qui sont intutiles de sauvegarder dans notre repo, ou alors que l'on ne veut pas mettre du tout (comme des mots de passes, des clés API etc...).
 
 <div align="center">
-<img align="center" alt="rootignore" src="./assets/rootignore.png"/>
-<img align="center" alt="exignore" src="./assets/exignore.png"/>
+<img align="center" alt="rootignore" src="./assets/treeignore.png"/>
+<img align="center" alt="exignore" src="./assets/ignore.png"/>
 
 *ci-dessus un exemple de .gitignore*
 </div>
