@@ -35,17 +35,14 @@ Quand on créé un nouveau projet (peu importe le type de projet ou le langage u
 Pour créer un nouveau repository il suffit de se rendre sur son profil github dans l'onglet repository et de cliquer sur *new*. Puis le menu de création nous demande de nommer le repository et propose quelques options à cocher ou non. En général la seule option qui nous intéresse est de mettre le repo en public ou en privé. Dans notre exemple je vais créer un repo nommé 'git_memo' que je vais laisser en public.
 
 <div align="center">
-<details>
-<summary>Créer un nouveau repository</summary>
-<br>
-<div>
 <img align="left" width="50%" alt="newRepo" src="./assets/newRepo.png" />
 <img align="right" width="50%" alt="newRepo" src="./assets/detailsRepo.png" />
 </div>
-</details>
-</div>
 
-<br><br>
+<br>
+<br>
+
+
 Admettons maintenant que nous avons déjà un projet en cours sur notre machine en local et que nous avons créé ce repo pour ce projet. Nous allons effectuer l'initialisation de ce repo en lien avec notre projet et effectuer notre première sauvegarde.
 
 Pour cela, nous allons ouvrir notre invite de commande (ou powershell). Il faut bien vérifier que nous avons *git cli* d'installé sur notre machine pour qu'elle reconnaisse les commandes git.
