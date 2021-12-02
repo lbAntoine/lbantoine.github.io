@@ -7,8 +7,6 @@
 Dans ce mémo je vais répertorier les différentes bonnes pratiques à adopter quand on utilise git, que ce soit pour un projet personnel ou un projet de grande envergure en équipe dans une entreprise.
 
 ---
-<<<<<<< Updated upstream
-=======
 
 **Table des matières**
 - [1] [Bases de git](#1)
@@ -18,7 +16,7 @@ Dans ce mémo je vais répertorier les différentes bonnes pratiques à adopter 
 - [2] [Gitflow, 3-way merge, conflits, hotfix, feature et release ...*coming soon*](#2)
 
 ---
->>>>>>> Stashed changes
+
 Préambule : 
 
 Bien que plusieurs solutions logicielles existent pour la gestion de projet git, ce mémo sera basé sur l'interface ligne de commande (soit dit en passant, les interfaces graphiques de gestion git -fork, gitkraken etc...- utilisent la ligne de commande en fond).
@@ -57,12 +55,6 @@ PS C:\Users\tomato> cd .\Documents\git_memo
 Puis nous allons initialiser git dans ce dossier (pour pouvoir le lier au repo que nous venons de créer).
 ```powershell
 ~ git init
-<<<<<<< Updated upstream
-Initialized empty Git repository in C:/Users/Antoine/Documents/gitmemo/.git/
-```
-=======
-
-Initialized empty Git repository in C:/Users/tomato/Documents/gitmemo/.git/
 ```
 Puis nous allons ajouter nos documents déjà existants de notre projet au client git pour pouvoir ensuite les envoyer dans notre repo.
 ```powershell
@@ -203,4 +195,3 @@ Et puis nous pouvons `push` tout ça et laisser profiter nos collègues de notre
 Pour des problèmes ou d'autres stratégie de merge, je laisse la parole à la documentation officielle, bien que si ce mémo est bien appliqué, il ne devrait pas y avoir d'erreurs (sauf si une autre stratégie de merge doit être utilisée plutôt que le *fast-forward* utilisé ici).
 
 ## 2. Gitflow, 3-way merge, conflits, hotfix, feature et release ...*coming soon*
->>>>>>> Stashed changes
