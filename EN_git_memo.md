@@ -1,19 +1,21 @@
 # **Mémo d'utilisation de git (seul ou en équipe)**
 
-> Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux, et distribué selon les termes de la licence publique générale GNU version 2. Le principal contributeur actuel de git et depuis plus de 16 ans est Junio C Hamano. En 2016, il s’agit du logiciel de gestion de versions le plus populaire qui est utilisé par plus de douze millions de personnes.
+> Git (/ɡɪt/) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).
 
-*Source : [Wikipedia](https://fr.wikipedia.org/wiki/Git)*
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server. Git is free and open-source software distributed under the GPL-2.0-only license.
 
-Dans ce mémo je vais répertorier les différentes bonnes pratiques à adopter quand on utilise git, que ce soit pour un projet personnel ou un projet de grande envergure en équipe dans une entreprise.
+*Source : [Wikipedia](https://en.wikipedia.org/wiki/Git)*
+
+In this memo I'll talk about different good habits when using git. Whether it's for a personal project or a bigger one with a bigger team.
 
 ---
 
-**Table des matières**
-- [1] [Bases de git](#1)
-  - [1.1] [Création d'un repository et ajout d'un remote pour un nouveau projet](#1.1)
+**Table**
+- [1] [Basis](#1)
+  - [1.1] [Creation of a repository and adding an existing project from local](#1.1)
   - [1.2] [.gitignore](#1.2)
-  - [1.3] [Les branches, travaille en équipe](#1.3)
-- [2] [Gitflow, 3-way merge, conflits, hotfix, feature et release ...*coming soon*](#2)
+  - [1.3] [Branches and teamwork](#1.3)
+- [2] [Gitflow, 3-way merge, conflicts, hotfix, feature and release ...*coming soon*](#2)
 
 ---
 
