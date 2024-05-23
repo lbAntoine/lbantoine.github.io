@@ -2,9 +2,11 @@
 <h1>Mémo d'utilisation de git (seul ou en équipe)</h1>
 
 <div>
-
-[Accueil](../README.md) • [Ma playlist](https://open.spotify.com/playlist/3o0OqYN0EFmReWTdlbybAW?si=D9RAH_usT9yd8Dmdj7n-Qg) • [Me soutenir](https://www.buymeacoffee.com/lbAntoine)
-
+    <a href="https://github.com/lbAntoine" target="_blank">Mon profil</a>
+•
+    <a href="https://open.spotify.com/playlist/3o0OqYN0EFmReWTdlbybAW?si=D9RAH_usT9yd8Dmdj7n-Qg" target="_blank">Ma playlist</a>
+•
+    <a href="https://www.buymeacoffee.com/lbAntoine" target="_blank">Me soutenir</a>
 </div>
 </div>
 
@@ -154,14 +156,16 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 <div align="center">
 <div>
-
-[« Partie précédente](./introduction.md) • [Accueil](../README.md) • [Partie suivante »](./gitflow.md)
-
+<a href="./introduction.md">« Partie précédente</a>
+•
+<a href="../README.md">Accueil</a>
+•
+<a href="./gitflow.md">Partie suivante »</a>
 </div>
 <img width="30%" src="https://utfs.io/f/35969b6d-f22c-4a41-9775-a54026f1ff73-mwy9q0.png" />
 <div>
-
-[Discord](https://discordapp.com/users/328163554991669251) • [LinkedIn](https://linkedin.com/in/antoine-le-bras/)
-
+<a href="https://discordapp.com/users/328163554991669251" target="_blank">Discord</a>
+•
+<a href="https://linkedin.com/in/antoine-le-bras/" target="_blank">LinkedIn</a>
 </div>
 </div>
