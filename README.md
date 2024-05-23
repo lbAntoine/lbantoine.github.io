@@ -3,6 +3,8 @@
 
 <div>
 
+    <a href="https://github.com/lbAntoine" target="_blank">Mon profil</a>
+
 [Mon profil](https://github.com/lbAntoine) • [Ma playlist](https://open.spotify.com/playlist/3o0OqYN0EFmReWTdlbybAW?si=D9RAH_usT9yd8Dmdj7n-Qg) • [Me soutenir](https://www.buymeacoffee.com/lbAntoine)
 
 </div>
