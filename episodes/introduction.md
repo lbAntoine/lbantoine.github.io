@@ -1,3 +1,8 @@
+---
+title: Git memo - Introduction
+tags: [dev]
+---
+
 <div align="center">
 <h1>Mémo d'utilisation de git (seul ou en équipe)</h1>
 
@@ -11,7 +16,6 @@
 **Préambule** :
 
 Bien que plusieurs solutions graphiques existent pour la gestion de projet git, ce mémo est basé sur le CLI (Command line interface). La raison principale étant que les entreprises n'utilisent pas souvent les interfaces graphiques ou bien si c'est le cas ce ne sont pas souvent les mêmes. Les compétences d'utilisation de git via le CLI sont, quant à elle, immuables.
-
 
 ## Introduction
 
@@ -49,31 +53,31 @@ git version 2.34.1 # Ta version peut différer
 
   <summary>Installation de git</summary>
 
-  #### Unix systems (Linux, macOS...)
+#### Unix systems (Linux, macOS...)
 
-  Avec linux, simplement utiliser le package manager de la distribution utilisée :
+Avec linux, simplement utiliser le package manager de la distribution utilisée :
 
-  ```bash
-  sudo apt install git # Ubuntu
-  sudo dnf install git # Fedora
-  sudo pacman -S git # Arch linux
-  sudo xbps-install git # Void
-  ```
+```bash
+sudo apt install git # Ubuntu
+sudo dnf install git # Fedora
+sudo pacman -S git # Arch linux
+sudo xbps-install git # Void
+```
 
-  Avec macOS, il faut avoir le package manager [HomeBrew](https://brew.sh/) d'installer puis exécuter la commande suivante :
+Avec macOS, il faut avoir le package manager [HomeBrew](https://brew.sh/) d'installer puis exécuter la commande suivante :
 
-  ```bash
-  brew install git
-  ```
+```bash
+brew install git
+```
 
-  #### Windows
+#### Windows
 
-  Pour windows c'est légèrement différent. Télécharge [l'installer](https://git-scm.com/download/win) ou bien utilises la commande [winget](https://github.com/microsoft/winget-cli) dans ton powershell (si tu as winget d'installé) :
+Pour windows c'est légèrement différent. Télécharge [l'installer](https://git-scm.com/download/win) ou bien utilises la commande [winget](https://github.com/microsoft/winget-cli) dans ton powershell (si tu as winget d'installé) :
 
-  ```powershell
-  winget install --id Git.Git -e --source winget
-  ```
-  
+```powershell
+winget install --id Git.Git -e --source winget
+```
+
 </detail>
 
 ---
@@ -97,3 +101,4 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 </div>
 </div>
+

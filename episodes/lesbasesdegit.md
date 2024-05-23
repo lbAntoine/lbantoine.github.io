@@ -1,3 +1,8 @@
+---
+title: Git memo - Bases de git
+tags: [dev]
+---
+
 <div align="center">
 <h1>Mémo d'utilisation de git (seul ou en équipe)</h1>
 
@@ -11,7 +16,6 @@
 **Préambule** :
 
 Bien que plusieurs solutions graphiques existent pour la gestion de projet git, ce mémo est basé sur le CLI (Command line interface). La raison principale étant que les entreprises n'utilisent pas souvent les interfaces graphiques ou bien si c'est le cas ce ne sont pas souvent les mêmes. Les compétences d'utilisation de git via le CLI sont, quant à elle, immuables.
-
 
 ## 1. Bases de git
 
@@ -92,13 +96,13 @@ Pour éviter d'envoyer ces fichiers et dossiers, nous pouvons créer un fichier 
 
 Il est bon de noter que maintenant beaucoup de templates de projets (qui peuvent être installés par des frameworks) incluent ce fichier de base avec une configuration pré-remplie. Mais il est tout de même intéressant de comprendre son fonctionnement pour éventuellement y faire des modifications toi même par la suite.
 
-J'ai ajouté une librairie dans notre projet exemple avec nodejs, ce qui a créé un dossier *node_modules* à la racine du projet. Si nous exécutons la commande `git status` nous pouvons voir ce que git comprend de l'état de nos fichiers dans notre projet et nous pouvons observer que ce dossier *node_modules* est considéré comme une nouveauté.
+J'ai ajouté une librairie dans notre projet exemple avec nodejs, ce qui a créé un dossier _node_modules_ à la racine du projet. Si nous exécutons la commande `git status` nous pouvons voir ce que git comprend de l'état de nos fichiers dans notre projet et nous pouvons observer que ce dossier _node_modules_ est considéré comme une nouveauté.
 
 <div align="center">
 <img align="center" alt="sshkey" src="https://utfs.io/f/b5740a4e-321e-4b6e-9a42-edf74caccccf-iy378h.png" />
 <br>
 
-*dossier node_modules non ignoré*
+_dossier node_modules non ignoré_
 
 </div>
 
@@ -108,13 +112,13 @@ C'est la que le fichier `.gitignore` entre en jeu. Ce fichier va faire comprendr
 node_modules
 ```
 
-Maintenant si nous exécutons la commande `git status` une nouvelle fois, nous pouvons nous appercevoir que le dossier *node_modules* a disparu des nouveautés vues par git.
+Maintenant si nous exécutons la commande `git status` une nouvelle fois, nous pouvons nous appercevoir que le dossier _node_modules_ a disparu des nouveautés vues par git.
 
 <div align="center">
 <img align="center" alt="sshkey" src="https://utfs.io/f/0984e130-8a94-4306-bc65-d15dc0b78f8c-szcceq.png" />
 <br>
 
-*dossier node_modules ignoré*
+_dossier node_modules ignoré_
 
 </div>
 
@@ -133,13 +137,13 @@ git push
 
 Rappel ! Comme indiqué plus tôt, maintenant que la branche main a été liée à la branche main du repo remote, il n'y a plus besoin d'utiliser le flag `-u`.
 
-Maintenant nous pouvons aller voir la page de notre repo remote pour se rendre compte que le nouveau commit est bien arrivé et que le dossier *node_modules* non voulu a bien été ignoré.
+Maintenant nous pouvons aller voir la page de notre repo remote pour se rendre compte que le nouveau commit est bien arrivé et que le dossier _node_modules_ non voulu a bien été ignoré.
 
 <div align="center">
 <img align="center" alt="sshkey" src="https://utfs.io/f/cb39f892-44cd-4d67-8281-321e6651f21e-s4cmpd.png" />
 <br>
 
-*repo remote après le deuxième push*
+_repo remote après le deuxième push_
 
 </div>
 
@@ -166,3 +170,4 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 </div>
 </div>
+

@@ -1,3 +1,7 @@
+---
+title: Home page
+---
+
 <div align="center">
 <h1>Mémo d'utilisation de git (seul ou en équipe)</h1>
 
@@ -43,3 +47,4 @@ Si tu souhaites contribuer aux différents articles (reporter une erreur, ajoute
 
 </div>
 </div>
+
