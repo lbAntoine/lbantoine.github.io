@@ -158,7 +158,7 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 <div>
 <a href="./introduction.html">« Partie précédente</a>
 •
-<a href="../README.html">Accueil</a>
+<a href="/">Accueil</a>
 •
 <a href="./gitflow.html">Partie suivante »</a>
 </div>

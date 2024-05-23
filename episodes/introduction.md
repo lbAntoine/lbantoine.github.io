@@ -87,7 +87,7 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 <div align="center">
 <div>
-<a href="../README.html">Accueil</a>
+<a href="/">Accueil</a>
 •
 <a href="./lesbasesdegit.html">Partie suivante »</a>
 </div>
