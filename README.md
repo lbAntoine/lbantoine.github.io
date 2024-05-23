@@ -40,8 +40,8 @@ Si tu souhaites contribuer aux différents articles (reporter une erreur, ajoute
 <div align="center">
 <img width="30%" src="https://utfs.io/f/35969b6d-f22c-4a41-9775-a54026f1ff73-mwy9q0.png" />
 <div>
-
-[Discord](https://discordapp.com/users/328163554991669251) • [LinkedIn](https://linkedin.com/in/antoine-le-bras/)
-
+<a href="https://discordapp.com/users/328163554991669251" target="_blank">Discord</a>
+•
+<a href="https://linkedin.com/in/antoine-le-bras/" target="_blank">LinkedIn</a>
 </div>
 </div>
