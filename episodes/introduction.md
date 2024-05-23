@@ -46,8 +46,7 @@ Assurons nous d'une chose aussi... tu as bien installé git sur ton ordinateur ?
 git version 2.34.1 # Ta version peut différer
 ```
 
-<detail>
-
+<details>
   <summary>Installation de git</summary>
 
 #### Unix systems (Linux, macOS...)
@@ -75,7 +74,7 @@ Pour windows c'est légèrement différent. Télécharge [l'installer](https://g
 winget install --id Git.Git -e --source winget
 ```
 
-</detail>
+</details>
 
 ---
 
