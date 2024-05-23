@@ -28,11 +28,11 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 <div align="center">
 <div>
-<a href="./gitflow.md">« Partie précédente</a>
+<a href="./gitflow.html">« Partie précédente</a>
 •
-<a href="../README.md">Accueil</a>
+<a href="../README.html">Accueil</a>
 •
-<a href="./levelupterm.md">Partie suivante »</a>
+<a href="./levelupterm.html">Partie suivante »</a>
 </div>
 <img width="30%" src="https://utfs.io/f/35969b6d-f22c-4a41-9775-a54026f1ff73-mwy9q0.png" />
 <div>
