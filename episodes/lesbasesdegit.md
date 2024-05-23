@@ -1,8 +1,3 @@
----
-title: Git memo - Bases de git
-tags: [dev]
----
-
 <div align="center">
 <h1>Mémo d'utilisation de git (seul ou en équipe)</h1>
 
@@ -170,4 +165,3 @@ Si tu aimes ce contenu et que tu le trouves utile, n'hésite pas à le mettre da
 
 </div>
 </div>
-
