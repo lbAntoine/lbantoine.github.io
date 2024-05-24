@@ -48,6 +48,8 @@ _création d'un nouveau repo_
 
 </div>
 
+> NB : Si le repo existe déjà il suffit d'exécuter la commande `git clone git@github.com:nomducompte/nomduprojet.git`
+
 Une fois le repo créé, tu peux récupérer le lien SSH (nous avons mis en place la connection avec une clé SSH alors ne prenons pas le lien HTTP). Le lien devrait ressembler à celui-ci `git@github.com:nomdecompte/nomdeprojet.git`.
 
 Retournons dans le dossier de notre projet, dans notre terminal. Avant toute chose, les moeurs changent et git a parfois du mal à s'y mettre, nous allons changer la branche initiale par défaut dans la configuration de git avec la commande `git config --global init.defaultBranch main` afin de passer la branche par défaut de _master_ à _main_.
@@ -144,7 +146,128 @@ _repo remote après le deuxième push_
 
 </div>
 
+
 ## 1.3. Les branches, travailler en équipe
+
+Les branches sont un concept coeur de git lorsqu'il s'agit du travail en équipe. Les branches permettent à des développeurs de travailler simultanément sans causer de problèmes de version ni de sauvegarde.
+
+Souviens toi, il faut garder en tête le concept du repo local et du repo remote. Idéalement le repo local est celui sur lequel le développeur travaille et sur lequel il fait ses modifications. Le repo remote, lui, est une sauvegarde de l'état du projet à un moment donné. Eh bien chaque branche peut être considéré comme une sauvegarde alternative qui débute à un moment précis de l'état d'une autre branche (la branche par défaut "main" est une branche).
+
+<div align="center">
+<img align="center" alt="sshkey" src="https://utfs.io/f/61487086-da9c-452e-8aa5-783cc6f919ed-b8c9yz.png" />
+<br>
+
+_illustration branches git_
+
+</div>
+
+Jusqu'à maintenant, dans l'exemple, nous étions le seul développeur. Pour expliquer comment le système de branche fonctionne, nous allons l'utiliser pour simuler un ou plusieurs autres développeurs sur le même projet.
+
+Pour ce faire, admettons d'abord que la branche main sera la branche de production, celle sur laquelle nous n'apportons pas de modification directe. Nous allons créer deux branches - a et b -. Il existe deux commandes pour créer une branche, nous allons utiliser les deux pour créer chacune des branches.
+
+```bash
+git branch a # créé la branche a
+git checkout a # place le local sur la branche a
+git push -u origin a # Pour que le repo remote ait aussi la branche a
+# Revenons sur la branche main
+git checkout main
+# Créons la branche b avec une commande raccourcie
+git checkout -b b # créé la branche b et checkout branch b
+```
+
+Maintenant notre repo d'exemple ressemble à peu près à ça :
+
+<div align="center">
+<img align="center" alt="sshkey" src="https://utfs.io/f/b423555e-163c-4e1b-9e2b-02493ff5d77b-f4jtv.png" />
+<br>
+
+_illustration branches git_
+
+</div>
+
+Comme les deux nouvelles branches (a et b) ont été créée à partir du dernier commit de main, les trois branches sont au même niveau. Pour la représentation dans l'illustration elle sont séparées pour la clarté mais la liaison permet de montrer qu'elle sont au même niveau.
+
+Mettons en place le jeu de rôle. Nous sommes le développeur A, et notre collaborateur est le développeur B. Imaginons que notre modification soit un peu plus longue que celle de notre collaborateur et ait aussi besoin d'une modification venant de la branche de notre collaborateur.
+
+```bash
+# Copie colle les commandes suivantes, c'est pour simuler le travail du collaborateur
+git checkout b
+touch src/fichierB.js
+echo "export const valeurImportante = 15;" >> src/fichierB.js
+git add . && git commit -m 'branch b push'
+git push
+git checkout a
+```
+
+Sur notre branche (a) nous allons ajouter un fichier `fichierA.js` dans le dossier `src` et un fichier `index.js` à la racine du projet. Dans le fichier `fichierA.js` nous allons écrire la fonction suivante.
+
+```javascript
+export function showNstring(n) {
+    const sampleSentence = "Bonjour je suis une string exemplaire.";
+    return sampleSentence.slice(n).trim();
+}
+```
+
+Et dans le fichier main, ajoutons la fonction suivante.
+
+```javascript
+import { showNstring } from "./src/fichierA.js";
+
+const result = showNstring(15);
+console.log("Résultat : ", result);
+```
+
+Si maintenant nous exécutons ce code avec la commande `node ./index.js`, nous devrions avoir l'output suivant : `une string exemplaire` (il se peut que tu aies une erreur, dans ce cas ajoute cette ligne dans ton fichier `package.json` : `"type": "module"`).
+
+Maintenant admettons que le travaille de notre collaborateur était de mettre en place des variables globales pour le projet. Ainsi, au lieu de donner le paramètre `15` dans l'appelle de fonction dans index, nous voudrions importer la variable globale.
+
+Tout d'abord, pushons nos modifications sur notre branche remote (te souviens tu des commandes ?) `git add . && git commit -m 'Push branch a' && git push`.
+
+Voici l'état du repo après notre dernier push.
+
+<div align="center">
+<img align="center" alt="sshkey" src="https://utfs.io/f/4590fc1e-6add-4578-9b59-f1114e9a9ec4-f4jtu.png" />
+<br>
+
+_illustration branches git_
+
+</div>
+
+Pour récupérer les variables créées par notre collaborateur nous allons devoir effectuer un merge de sa branche dans la notre. Pour ce faire la procédure est la suivante :
+
+```bash
+# Récupérer toutes les informations du repo remote
+git fetch origin
+# Se rendre sur la branche b pour récupérer les
+# dernières modifications en local
+git checkout b && git pull
+# Retourner sur la branche a
+git checkout a
+# Merge la branche b dans la branche a
+git merge -m 'Merge branch b into a' b
+```
+
+Maintenant les dernières modifications de la branche b ont été fusionnées dans notre branche a. Allons modifier le fichier `index.js` pour prendre la variable globale du `fichierB.js`.
+
+```javascript
+import { showNstring } from "./src/fichierA.js";
+import { variableImportante } from "./src/fichierB.js";
+
+const result = showNstring(variableImportante);
+console.log("Résultat : ", result);
+```
+
+Si nous relançons ce script avec la commande `node ./index.js` nous aurons le même résultat que précédemment mais avec les changements de notre collaborateur. Ajoutons notre modification dans un nouveau commit et pushons nos deux commit sur notre branche remote `git add . && git commit -m 'Push branch a v2' && git push`.
+
+<div align="center">
+<img align="center" alt="sshkey" src="https://utfs.io/f/8fca83dc-024d-49d5-9f04-6e2cb683f62c-f4jtt.png" />
+<br>
+
+_illustration branches git après le merge_
+
+</div>
+
+Et maintenant notre collaborateur veut publier sa branche sur la branche de production, et il le fait sans récupérer nos modifications avant et la!!!!!!! Hop hop hop, pas trop vite. C'est pour une [autre partie](./mergeconflicts.md) ça 😉 avant d'aborder les conflits, nous allons voir un outil qui permet de faciliter la gestion des branches en adoptant un workflow... le gitflow.
 
 ---
 
