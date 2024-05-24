@@ -34,7 +34,7 @@ Sur ton ordinateur, tu as un dossier contenant un projet que tu veux versionner 
 <img align="center" alt="sshkey" src="https://utfs.io/f/3c2aea44-97ab-4c3d-8409-2972ebee9494-qimi81.png" />
 <br>
 
-_projet exemple sur l'ordinateur local_
+<i>projet exemple sur l'ordinateur local</i>
 
 </div>
 
@@ -44,7 +44,7 @@ Avant de nous intéresser aux commandes que nous devrons exécuter, nous allons 
 <img align="center" alt="sshkey" src="https://utfs.io/f/8d58c846-b1aa-409d-a80d-ebaea70054d6-hcg077.png" />
 <br>
 
-_création d'un nouveau repo_
+<i>création d'un nouveau repo</i>
 
 </div>
 
@@ -66,7 +66,7 @@ Et voilà ! Si nous retournons sur la page du projet nous devrions voir nos fich
 <img align="center" alt="sshkey" src="https://utfs.io/f/d109cdc1-eda6-4c54-996a-1111e8240e1a-27p96y.png" />
 <br>
 
-_repo remote après le premier push_
+<i>repo remote après le premier push</i>
 
 </div>
 
@@ -101,7 +101,7 @@ J'ai ajouté une librairie dans notre projet exemple avec nodejs, ce qui a cré�
 <img align="center" alt="sshkey" src="https://utfs.io/f/b5740a4e-321e-4b6e-9a42-edf74caccccf-iy378h.png" />
 <br>
 
-_dossier node_modules non ignoré_
+<i>dossier node_modules non ignoré</i>
 
 </div>
 
@@ -117,7 +117,7 @@ Maintenant si nous exécutons la commande `git status` une nouvelle fois, nous p
 <img align="center" alt="sshkey" src="https://utfs.io/f/0984e130-8a94-4306-bc65-d15dc0b78f8c-szcceq.png" />
 <br>
 
-_dossier node_modules ignoré_
+<i>dossier node_modules ignoré</i>
 
 </div>
 
@@ -142,7 +142,7 @@ Maintenant nous pouvons aller voir la page de notre repo remote pour se rendre c
 <img align="center" alt="sshkey" src="https://utfs.io/f/cb39f892-44cd-4d67-8281-321e6651f21e-s4cmpd.png" />
 <br>
 
-_repo remote après le deuxième push_
+<i>repo remote après le deuxième push</i>
 
 </div>
 
@@ -157,7 +157,7 @@ Souviens toi, il faut garder en tête le concept du repo local et du repo remote
 <img align="center" alt="sshkey" src="https://utfs.io/f/61487086-da9c-452e-8aa5-783cc6f919ed-b8c9yz.png" />
 <br>
 
-_illustration branches git_
+<i>illustration branches git</i>
 
 </div>
 
@@ -181,7 +181,7 @@ Maintenant notre repo d'exemple ressemble à peu près à ça :
 <img align="center" alt="sshkey" src="https://utfs.io/f/b423555e-163c-4e1b-9e2b-02493ff5d77b-f4jtv.png" />
 <br>
 
-_illustration branches git_
+<i>illustration branches git</i>
 
 </div>
 
@@ -229,7 +229,7 @@ Voici l'état du repo après notre dernier push.
 <img align="center" alt="sshkey" src="https://utfs.io/f/4590fc1e-6add-4578-9b59-f1114e9a9ec4-f4jtu.png" />
 <br>
 
-_illustration branches git_
+<i>illustration branches git</i>
 
 </div>
 
@@ -263,7 +263,7 @@ Si nous relançons ce script avec la commande `node ./index.js` nous aurons le m
 <img align="center" alt="sshkey" src="https://utfs.io/f/8fca83dc-024d-49d5-9f04-6e2cb683f62c-f4jtt.png" />
 <br>
 
-_illustration branches git après le merge_
+<i>illustration branches git après le merge</i>
 
 </div>
 

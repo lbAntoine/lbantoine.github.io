@@ -36,7 +36,7 @@ Une fois générée, tu pourras trouver deux versions de la clé dans le dossier
 <img align="center" alt="sshkey" src="https://utfs.io/f/f8c51a88-7820-427c-8bc0-4b2fd644d3d6-feeo3u.png" />
 <br>
 
-_ajouter une clé SSH_
+<i>ajouter une clé SSH</i>
 
 </div>
 
